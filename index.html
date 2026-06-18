@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DormMate</title>
+    <style>
+body {
+    font-family: Arial;
+    background-color: lightblue;
+    padding-top: 50px;
+}
+
+h1 {
+    color: darkblue;
+    text-shadow: 2px 2px 4px gray;
+    letter-spacing: 2px;
+    font-size: 36px;
+}
+
+p {
+    color: #444;
+    font-size: 18px;
+}
+
+input, select {
+    padding: 10px;
+    margin: 8px;
+    width: 250px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    background-color: #fafafa;
+    font-size: 15px;
+    
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px gray;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 0.8;
+    background-color: #218838;
+    transform: scale(1.1);
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    max-width: 400px;
+    margin-top: 20px;
+}
+</style>
+</head>
+<body>
+<center>
+
+    <h1>DormMate - AI Roommate Matching</h1>
+    <p>Find your perfect roommate based on your preferences</p>
+
+    <form method="POST">
+        <input type="text" name="name" placeholder="Enter Name">
+
+        <br><br>
+
+        <input type="number" name="budget" placeholder="Enter Budget">
+
+        <br><br>
+        <br><br>
+        <input type="number" name="age" placeholder="Enter Age">
+        <br><br>
+        <br><br>
+        <input type="text" name="hobby" placeholder="Enter Hobby">
+        <br><br>
+        <select name="lifestyle">
+            <option>Morning Person</option>
+            <option>Night Owl</option>
+        </select>
+
+        <br><br>
+        <br><br>
+
+        <select name="cleanliness">
+            <option>Clean</option>
+            <option>Average</option>
+            <option>Messy</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+
+</center>
+<hr>
+
+<p>© 2026 DormMate | AI Roommate Matching Project</p>
+</body>
+</html>
