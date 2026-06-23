@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder="templates")
 
 # Mock Database: Multiple dummy users data already stored in app memory
 USERS_DATABASE = [
@@ -62,4 +62,4 @@ def home():
     return render_template("index.html")
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
